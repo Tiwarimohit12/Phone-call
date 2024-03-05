@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Data Table</h1>
+
+  <div id="tableContainer">
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Mobile Number</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="dataBody">
+      </tbody>
+    </table>
+  </div>
+
+  <div id="inputForm">
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="number" id="ageInput" placeholder="Age">
+    <select id="genderInput">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <input type="text" id="mobileInput" placeholder="Mobile Number">
+    <button onclick="saveData()">Save</button>
+    <button onclick="editData()">Edit</button>
+    <button onclick="call()">Call</button>
+    <button onclick="cut()">Cut</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
